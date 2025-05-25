@@ -32,7 +32,7 @@ This site is built with:
 ## 🚀 Getting Started
 
 View the site live (if hosted):  
-🔗 [YourLiveSiteLink.com](#)
+🔗 [https://shivanijwork.github.io/NerdWorthy/](#)
 
 To run it locally:
 
