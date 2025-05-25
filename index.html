@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>NerdWorthy</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <style></style>
+</head>
+
+<body>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h5 class="mb-2"><a class="navbar-brand" href="index.html"><i>NerdWorthy</i></a></h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="books.html">Book Reviews</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="history.html">History</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" href="business.html">Business</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="history.html">History</a></li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Author</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#LoginModal">
+            Login
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="LoginModalLabel">Login to <i>NerdWorthy</i></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+            Sign Up
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="SignUpModalLabel">Get <i>NerdWorthy</i> Account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        Subscribe
+                    </button> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images\history3.jpg" class="d-block w-100" alt="..." width="100px" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Welcome to NerdWorthy!</h3>
+          <h5>🕰️ Nerd Out on History!</h5>
+          <p>Epic tales, wild facts, and time-traveling fun.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images\book2.jpg" class="d-block w-100" alt="..." width="100px" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Welcome to NerdWorthy!</h3>
+          <h5>📚 Bookworm Paradise</h5>
+          <p>Geeky reads, reviews, and page-turning adventures.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images\pen2.jpg" class="d-block w-100" alt="..." width="100px" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Welcome to NerdWorthy!</h3>
+          <h5>🎨 Creative Zone</h5>
+          <p>Art, doodles, and all things imagination.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Reading Inspiration</a></li>
+            <li class="breadcrumb-item"><a href="#">Writing Inspiration</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">Photography Inspiration</a></li>
+        </ol>
+    </nav> -->
+  <br>
+
+  <div class="container">
+    <!-- In future do this -->
+    <!-- <p class="lead"><i>Random sparks to make you read, write, or shoot.
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="ReadingInspiration.html">Reading Inspiration</a></li>
+            <li class="breadcrumb-item"><a href="WritingInspiration.html">Writing Inspiration</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="PhotoInspiration.html">Photography
+                Inspiration</a>
+            </li>
+          </ol>
+        </nav> -->
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Book Of The Week </h2>
+            <h5><span class="text-muted">The Palace Of Illusions - Chitra Banerjee Divakaruni</span></h5>
+            <p class="lead">
+              This week, challenge your inner nerd to pick up this stunning retelling of the Mahabharata — from the bold
+              and brilliant voice of <strong>Draupadi</strong> herself.
+            </p>
+            <p>
+              <em>The Palace of Illusions</em> isn’t just mythology — it’s power, pain, rebellion, destiny, and deeply
+              personal longing all told through poetic prose and razor-sharp perspective.
+            </p>
+            <p>
+              Give yourself the challenge to finish this masterpiece by the end of the week. Highlight your favorite
+              line. Question the choices. Feel the fire.
+            </p>
+            <p><strong>Let’s read differently. Let’s read bravely.</strong></p>
+
+            <div class="row mt-4">
+              <div class="col-md-12 text-center">
+                <h5 class="mb-3">📬 Finished the book? Loved (or hated) it?</h5>
+                <p>I'd love to hear what you think! Did you enjoy it? Did any line stay with you? Was Draupadi
+                  justified? Or maybe you just want to nerd out with me!</p>
+                <a href="mailto:shivanijwork@gmail.com?subject=Thoughts on The Palace of Illusions"
+                  class="btn btn-outline-primary mt-2">
+                  Submit Your Thoughts
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="col-md-5"><br>
+            <img src="Images\POI.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500"
+              alt="Your description">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Weekly Tech Challenge</h2>
+            <h5><span class="text-muted">Create A Portfolio Website</span></h5>
+            <p class="lead">
+              Ready to level up your tech skills and showcase your journey? This week’s tech challenge is to design and
+              build your very own portfolio website. Whether you're a beginner or a seasoned coder, this challenge is
+              your chance to bring your skills to the web!
+            </p>
+            <p>
+              Use HTML, CSS, Bootstrap — or experiment with frameworks like React or Vue if you're feeling brave. Add
+              your projects, resume, and maybe even a blog section to share what you learn.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-3">
+              <a href="https://your-portfolio-link.com" class="btn btn-outline-success me-2" target="_blank">See My
+                Portfolio</a>
+              <a href="https://github.com/yourusername" class="btn btn-outline-dark" target="_blank">Check Out My
+                GitHub</a>
+            </div>
+            <!-- <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p> -->
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="Images\tech1.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500"
+              alt="Your description">
+
+          </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Weekly Case Study</h2>
+            <h5><span class="text-muted">Zepto: Speed Meets Strategy</span></h5>
+            <p class="lead">
+              This week, we explore <strong>Zepto</strong> – the startup redefining quick commerce in India. From
+              10-minute deliveries to rapid city expansions, Zepto is a case study in ambitious execution, razor-sharp
+              logistics, and hyperlocal market understanding.
+            </p>
+            <p class="lead">
+              Learn about its founding story, dark store model, marketing hacks, challenges with sustainability, and why
+              investors are betting big on this young unicorn.
+            </p>
+            <div class="mt-3">
+              <a href="ZeptoCaseStudy.html" class="btn btn-outline-primary" target="_blank">Read Full Case Study</a>
+            </div>
+            <!-- <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p> -->
+          </div>
+          <div class="col-md-5">
+            <img src="Images\zepto.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500"
+              alt="Your description">
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">History Highlight</h2>
+            <h5><span class="text-muted">The Thar Desert Wasn’t Always Dry</span></h5>
+            <p class="lead">
+              Think deserts are lifeless and barren? Think again. Beneath the golden sands of the Thar Desert lies the
+              ghost of a mighty river — the ancient Saraswati.
+            </p>
+            <p>
+              Once believed to be a myth from Vedic texts, recent geological studies and satellite imagery suggest that
+              the Saraswati was real, wide, and thriving — flowing through parts of Rajasthan before disappearing into
+              legend.
+            </p>
+            <p>
+              Imagine a green, river-fed civilization where the dunes now dance with heat. The Thar wasn’t always dry.
+              History just left us dusty clues.
+            </p>
+            <p><em>What other “myths” do you think might be ancient truths waiting to be uncovered?</em></p>
+            <div class="mt-3">
+              <a href="full-article.html" class="btn btn-outline-primary me-2">Read Full Article</a>
+              <a href="mailto:shivanijwork@gmail.com?subject=Weird Historical Thought"
+                class="btn btn-outline-secondary">Submit Your Thought</a>
+            </div>
+            <p class="mt-2"><small>Know a strange historical mystery or myth? I’d love to hear it and maybe feature it
+                here!</small></p>
+
+          </div>
+          <div class="col-md-5 order-md-1"><br>
+            <img src="Images\HistoryHighlight1.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500"
+              alt="Your description">
+            <p class="mt-2"><small>Image Source: <a href="https://www.example.com" target="_blank">Your Image
+                  Source</a></small></p>
+
+          </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Weekly Creative Challenge</h2>
+            <h5><span class="text-muted">A Story in a Snapshot</span></h5>
+            <p class="lead">
+              Ready to stir your imagination? This week’s creative challenge is all about turning *"ordinary moments
+              into stories."*
+            </p>
+            <p>
+              Take a random photo — maybe it’s your messy desk, a half-drunk coffee cup, or a crack in the sidewalk —
+              and craft a mini-story or caption around it.
+            </p>
+            <p>
+              📸 Snap it. ✍️ Write it. 🎨 Paint it. However you express it, this is your creative sandbox.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-3">
+              <a href="submit-creative.html" class="btn btn-outline-success me-2">Submit Your Entry</a>
+              <!-- <a href="creative-archive.html" class="btn btn-outline-dark">See Past Challenges</a> -->
+            </div>
+            <p class="mt-2"><small>Selected entries might get featured on the blog!</small></p>
+          </div>
+          <div class="col-md-5">
+            <img src="Images\Creativity1.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500"
+              alt="Your description">
+
+          </div>
+        </div>
+        <hr class="featurette-divider">
+
+
+
+        <footer class="bg-dark text-light py-4 mt-5" style="position: absolute; left: 0; right: 0;">
+          <div class="container text-center">
+            <h5 class="mb-2">NerdWorthy</h5>
+            <p class="mb-1">Fueling your curiosity, one nerdy fact at a time.</p>
+            <div class="mb-2">
+              <a href="index.html" class="text-light mx-2 text-decoration-none">Home</a>|
+              <a href="about.html" class="text-light mx-2 text-decoration-none">About</a>|
+              <a href="contact.html" class="text-light mx-2 text-decoration-none">Contact</a>
+            </div>
+            <small>&copy; 2025 NerdWorthy. All rights reserved.</small>
+          </div>
+        </footer>
+</body>
+
+</html>
